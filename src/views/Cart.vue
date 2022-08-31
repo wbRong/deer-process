@@ -64,7 +64,7 @@
               合计<span class="unique">{{ total.price }}</span>
             </li>
             <li>
-              <button class="btn">去结算</button>
+              <button class="btn" @click="goOrder">去结算</button>
             </li>
           </ul>
         </div>
@@ -126,6 +126,12 @@ const del = (id) => {
       });
     });
 };
+
+//去结算
+let router = useRouter();
+const goOrder = ()=>{
+  router.push('/confirmOrder');
+}
 </script>
 
 <style scoped>

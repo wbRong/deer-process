@@ -3,36 +3,45 @@ export const useCartStore = defineStore({
   id: 'cart',
   state: () => {
     return {
-      cartList:[],
-      select:[]
+      cartList:[],//购物车数据
+      select:[],//选中的商品的id
+      order:[]
     }
   },
   getters:{
-    checkAll( ){
-      return this.cartList.length == this.select.length;
+    isChecked(){
+      return this.select.length == this.cartList.length;
     },
+    //总价和数量
     total(){
-      let total = {
+      this.order = [];
+      let total={
         price:0,
         number:0
       }
       this.cartList.forEach(v=>{
-        if( this.select.indexOf( v.id ) != -1 ){
-          total.price += v.discountPrice * v.counter;
+        if( this.select.indexOf( v.id )  !=-1 ){
+          this.order.push({
+            id:v.courseId,
+            number:1
+          })
+          total.price += v.counter * v.discountPrice;
           total.number = this.select.length;
         }
       })
+
       return total;
     }
   },
   actions:{
-    //获取数据
-    getCartList( list ){
+    //存储购物车数据
+    addCart( list ){  
+      this.select = [];
       list.forEach(v=>{
         v['check'] = true;
         this.select.push( v.id );
       })
-      this.cartList = list;
+      this.cartList=list;
     },
     //全选
     all(){
@@ -49,16 +58,21 @@ export const useCartStore = defineStore({
       this.select = [];
     },
     //单选
-    checkItem( index ){
+    itemChecked( index ){
+      //当前点击的课程都id值
       let id = this.cartList[index].id;
-      let idx = this.select.indexOf(id);
-      if( idx > -1 ){
-          this.cartList[index].check = false;
-          this.select.splice(idx,1);
+      //去检查select中有没有
+      let idx = this.select.indexOf( id );
+
+      if( idx > -1 ){ 
+        //有
+        this.cartList[index].check = false;
+        this.select.splice( idx, 1 );
       }else{
-          this.cartList[index].check = true;
-          this.select.push( id );
+        //没有
+        this.cartList[index].check = true;
+        this.select.push(  id  );
       }
     }
-  },
+  }
 })

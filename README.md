@@ -1,5 +1,6 @@
-## Vue 3 + Vite
+# 小鹿进程
 
+vue3.0 vite pinia element-plus
 **删减版**~
 
 ### 依赖
@@ -39,4 +40,4 @@ npm run build
             imports:['vue','vue-router'] //自动导入vue和vue-router相关函数
           })
         ],
-      })
+      })n

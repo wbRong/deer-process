@@ -16,6 +16,7 @@
     <div class="newCourseContent">
       <ul>
         <li class="courseItem" v-for="item in newCourse" :key="item.id">
+        <router-link :to="{ path: '/info/' + item.id }">
           <div class="courseInfo">
             <div class="courseBg">
               <img :src="item.courseCover" />
@@ -27,6 +28,7 @@
             </div>
             <div class="coursePricePri">¥ {{ item.discountPrice }}</div>
           </div>
+          </router-link>
         </li>
       </ul>
     </div>
@@ -176,4 +178,5 @@ onBeforeMount(() => {
   color: rgba(255, 114, 127, 1);
   font-weight: 700;
 }
+a{text-decoration: none;}
 </style>

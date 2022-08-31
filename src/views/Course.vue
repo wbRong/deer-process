@@ -315,24 +315,28 @@ watch(radio, (newVal, oldVal) => {
   }
   querySearchCourse();
 });
+
 //综合
 const handleZonghe = () => {
   priceSortBy.value = "1";
   queryCoursePrams.entity.sortBy = "";
   querySearchCourse();
 };
+
 //最新课程
 const handleNewCourse = () => {
   priceSortBy.value = "2";
   queryCoursePrams.entity.sortBy = "time-desc";
   querySearchCourse();
 };
+
 //最多购买
 const mostbuy = () => {
   priceSortBy.value = "3";
   queryCoursePrams.entity.sortBy = "purchase-desc";
   querySearchCourse();
 };
+
 //价格
 const handlePrice = () => {
   if (priceSortBy.value == "4" || priceSortBy.value != "5") {

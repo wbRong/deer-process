@@ -5,7 +5,7 @@ import { useUserStore } from '@/store/user'
 const routes = [
   {
     path: '/',
-    redirect: '/cart',
+    redirect: '/home',
   },
   {
     path: "/home",
@@ -35,6 +35,12 @@ const routes = [
     name: 'CoursePlay',
     component: () => import("../views/CoursePlay.vue"),
     meta: { title: '课程播放页' },
+  },
+  {
+    path: '/confirmOrder',
+    name: 'ConfirmOrder',
+    component: () => import("../views/ConfirmOrder.vue"),
+    meta: { title: '确定订单页' },
   },
   {
     path: "/cart",

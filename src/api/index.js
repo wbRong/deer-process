@@ -139,12 +139,48 @@ export function deleteShopCar (params, token) {
   })
 }
 
+//批量删除购物车
+export function deleteShopCars ( ids ,token ) {
+  return request({
+    url: '/api/shopcar/deleteShopCars',
+    data:ids,
+    method: 'post',
+    headers: { token }
+  })
+}
+
 //添加购物车
-export function addShopCar (data,token) {
+export function addShopCar (data, token) {
   return request({
     url: '/api/shopcar/addShopCar',
     method: 'post',
     data,
     headers: { token }
+  })
+}
+
+//去结算
+export function settlement (data) {
+  return request({
+    url: '/api/order/settlement',
+    method: 'post',
+    data,
+  })
+}
+
+//支付宝结算
+export function alipayOrder (data) {
+  return request({
+    url: '/api/pay/alipay/createOrder',
+    method: 'post',
+    data,
+  })
+}
+
+//查询支付宝，支付订单状态
+export function queryAlipay (params) {
+  return request({
+    url: '/api/pay/alipay/queryOrder',
+    params,
   })
 }
