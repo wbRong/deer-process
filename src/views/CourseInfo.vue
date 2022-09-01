@@ -18,12 +18,12 @@
           <div class="name">{{ courseInfo.courseName }}</div>
           <div class="info">
             <div class="Avat">
-              <img src="../assets/img/Avat62.png" alt="" />
+              <img src="" alt="" />
             </div>
             <ul class="teacherName">
               <li class="name-item">
                 {{ courseInfo.courseName }}
-                <img src="../assets/img/teacherStart.png" alt="" />
+                <img src="" alt="" />
               </li>
               <li class="name-item">金牌讲师</li>
             </ul>

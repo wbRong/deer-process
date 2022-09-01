@@ -6,7 +6,7 @@
           <!-- 登录框左侧 -->
           <div class="login-left">
             <a href="javascript:;" class="logo">
-              <img src="../assets/img/logo02.png"/>
+              <img src=""/>
             </a>
             <div class="left-qrcode">
               <div id="qrcode" >

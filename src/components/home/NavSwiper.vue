@@ -54,7 +54,7 @@
                           <div class="cart">
                             <div class="cart-image">
                               <img
-                                src="http://localhost:8080/image/cart16.png"
+                                src=""
                               />
                             </div>
                             <span class="addcart">加入购物车</span>
@@ -92,7 +92,7 @@
       <div class="course-type-item">
         <router-link to="/">
           <div class="course-type-item-icon">
-            <img src="../../assets/img/chuji.png" />
+            <img src="" />
           </div>
           <div class="course-type-item-text">
             <div class="course-type-item-title">初级课程</div>
@@ -103,7 +103,7 @@
       <div class="course-type-item">
         <router-link to="/">
           <div class="course-type-item-icon">
-            <img src="../../assets/img/zhongji.png" />
+            <img src="" />
           </div>
           <div class="course-type-item-text">
             <div class="course-type-item-title">中级课程</div>
@@ -114,7 +114,7 @@
       <div class="course-type-item">
         <router-link to="/">
           <div class="course-type-item-icon">
-            <img src="../../assets/img/gaoji.png" />
+            <img src="" />
           </div>
           <div class="course-type-item-text">
             <div class="course-type-item-title">高级课程</div>
@@ -125,7 +125,7 @@
       <div class="course-type-item">
         <router-link to="/">
           <div class="course-type-item-icon">
-            <img src="../../assets/img/xiangmu.png" />
+            <img src="" />
           </div>
           <div class="course-type-item-text">
             <div class="course-type-item-title">项目实战</div>
@@ -136,7 +136,7 @@
       <div class="course-type-item">
         <router-link to="/">
           <div class="course-type-item-icon">
-            <img src="../../assets/img/suanfa.png" />
+            <img src="" />
           </div>
           <div class="course-type-item-text">
             <div class="course-type-item-title">前端算法</div>

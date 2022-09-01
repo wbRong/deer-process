@@ -2,10 +2,10 @@
   <div class="footer">
     <div class="footer-main">
       <div class="footer-xlx">
-        <img src="../../assets/img/logo02.png" />
+        <img src="" />
       </div>
       <div class="footer-factory">
-        <img src="../../assets/img/foot-factory.png" />
+        <img src="" />
       </div>
       <div class="copytight">
         <ul class="copy-top">
@@ -34,13 +34,13 @@
       </div>
       <div class="wx">
         <div class="wx-bg">
-          <img src="../../assets/img/guanfangwx.jpg" />
+          <img src="" />
         </div>
         <div class="wx-dsc">官方微信</div>
       </div>
       <div class="wx">
         <div class="wx-bg">
-          <img src="../../assets/img/laoshiwx.png" />
+          <img src="" />
         </div>
         <div class="wx-dsc">咨询老师微信</div>
       </div>

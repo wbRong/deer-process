@@ -86,7 +86,7 @@
               <div>
                 <router-link to="/">
                   <div class="info-item">
-                    <img src="../assets/img/course.png" />
+                    <img src="" />
                     <p>我的课程</p>
                   </div>
                 </router-link>
@@ -94,7 +94,7 @@
               <div>
                 <router-link to="/">
                   <div class="info-item">
-                    <img src="../assets/img/order.png" />
+                    <img src="" />
                     <p>订单中心</p>
                   </div>
                 </router-link>
@@ -102,7 +102,7 @@
               <div>
                 <router-link to="/">
                   <div class="info-item">
-                    <img src="../assets/img/mess.png" />
+                    <img src="" />
                     <p>我的消息</p>
                   </div>
                 </router-link>
@@ -110,7 +110,7 @@
               <div>
                 <router-link to="/">
                   <div class="info-item">
-                    <img src="../assets/img/setting.png" />
+                    <img src="" />
                     <p>个人设置</p>
                   </div>
                 </router-link>

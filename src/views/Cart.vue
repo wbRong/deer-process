@@ -52,7 +52,7 @@
             </ul>
           </div>
           <div class="noOrder" v-else>
-            <img src="/image/norder365.png" alt="" />
+            <img src="" alt="" />
             <div class="order-alert">哎呦！暂无订单</div>
           </div>
           <el-divider class="line"></el-divider>
