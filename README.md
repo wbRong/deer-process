@@ -1,21 +1,26 @@
-# 小鹿进程
+## 小鹿进程
 
-vue3.0 vite pinia element-plus
+vue3.0 vite element-plus
 **删减版**~
 
 ### 依赖
-```
+```sh
 npm install
 ```
 
 ### 运行
-```
+```sh
 npm run dev
 ```
 
 ### 打包
-```
+```sh
 npm run build
+```
+
+### 预览
+```sh
+npm run preview
 ```
 
 ### 其它
@@ -31,13 +36,14 @@ npm run build
 
 		npm i unplugin-auto-import -D
 
-配置：`vite.config.js`
-
-    import AutoImport from 'unplugin-auto-import/vite'
-      export default defineConfig({
-        plugins: [
-          AutoImport({
-            imports:['vue','vue-router'] //自动导入vue和vue-router相关函数
-          })
-        ],
-      })n
+- 配置：`vite.config.js`
+```js
+import AutoImport from 'unplugin-auto-import/vite'
+  export default defineConfig({
+    plugins: [
+      AutoImport({
+        imports:['vue','vue-router'] //自动导入vue和vue-router相关函数
+      })
+    ],
+  })
+```
